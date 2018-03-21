@@ -1,0 +1,25 @@
+@import "../../assets/custom";
+.component-sidebar{
+  width:300px;
+  background: linear-gradient(to bottom, #4c6efb 0%, #a7b9ff 100%);
+  color:white;
+  font-size:16px;
+  padding-top:40px;
+  height:100vh;
+  position:relative;
+  box-shadow: 9px 0px 12px rgba(0, 0, 0, 0.2);
+  .navbar{
+    padding:20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  .close-bar{
+    padding:10px;
+    position:absolute;
+    right:-5px;
+    transform: scale(0.5);
+    top:-5px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 18px;
+  }
+}

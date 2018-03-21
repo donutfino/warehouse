@@ -1,0 +1,23 @@
+@import "../../assets/custom";
+.home-tabs div{
+    margin-bottom: 20px;
+}
+.home-tabs div.tabs-details{
+    border: 0;
+    color: white;
+    background: linear-gradient(to bottom, #6a88ff 0%, #0033ff 100%);
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.home-tabs span {
+    float: right;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    margin-top: -25px;
+}
+.home-tabs div h3 {
+    display: inline;
+    font-size: 16px;
+}

@@ -1,0 +1,22 @@
+@import "../../assets/custom";
+.component-customer-card{
+  .customer-card-container{
+    display:flex;
+    .img-container{
+      height:80px;
+      width:80px;
+      padding:5px;
+      img{
+        height:70px;
+      }
+    }
+    .customer-detail-container{
+      flex:1 1;
+      padding:5px;
+    }
+    span{
+      margin-right:15px;
+    }
+  }
+
+}

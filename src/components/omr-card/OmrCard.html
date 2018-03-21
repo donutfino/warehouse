@@ -1,0 +1,36 @@
+<div class="component-omr-card">
+  <div class="omr-container ">
+    <div class="omr-bar-code viewport" id="interactive" style="overflow: hidden; max-height: 300px;">
+        <div class="scan" style="position: absolute; z-index: 100; background:#fff;" v-if="code && code.length>0">
+          <h3>{{ code }}</h3>
+        </div>
+    </div>
+    <div class="btn-group " style="width:100%">
+       <button class="btn btn-black" style="flex:1; border:1px solid gray;" @click="scanBardCode()">Scan</button>
+       <button class="btn btn-black" style="flex:1; border:1px solid gray;" @click="closeScan()">Close</button>
+    </div>
+    <br><br>
+      <h6>Customer</h6>
+      <select :disabled="!check_in" class="input-box" type="select" placeholder="Choose Customer">
+        <option value="87576">John Doe</option>
+        <option value="8768">Jane</option>
+        <option value="76">Shawn</option>
+      </select>
+      <hr>
+      <h6>Details:</h6>
+      <input :disabled="!check_in" class="input-box" type="text" placeholder="Item Name">
+      <input :disabled="!check_in" class="input-box" type="date" placeholder="Date">
+      <select :disabled="!check_in" class="input-box" type="select" placeholder="Choose Size">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+        <input :disabled="!check_in" class="input-box" type="text" placeholder="Weight">
+     
+  </div>
+  <div class="btn-container">
+    <button class="btn btn-dark" v-if="check_in">Check In</button>
+    <button class="btn btn-dark" v-if="!check_in">Check Out</button>
+  </div>
+
+</div>

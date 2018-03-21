@@ -1,0 +1,23 @@
+@import "../../assets/custom";
+.component-login{
+  .login-form{
+    padding:10px;
+    max-width:320px;
+    .heading{
+      font-size:28px;
+      padding:30px 0;
+    }
+  }
+}
+
+.login-form {
+  background: linear-gradient(to bottom, #4c6efb 0%, #a7b9ff 100%);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 5px 7px 16px rgba(0, 0, 0, 0.2);
+}
+
+.login-form .form-group {
+  margin: 2rem 0;
+}

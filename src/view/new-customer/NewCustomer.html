@@ -1,0 +1,39 @@
+<div class="view-new-customer">
+  <div class="fixed-nav flex-between">
+    <span class="chevron" @click="$router.go(-1)">
+      <img class="img-fluid" src="../../assets/img/chevron-right.png">
+    </span>
+    <span class="title">New Customer</span>
+    <span class="navicon">
+        <div style="display:inline;" @click="$router.push('/home-page')">
+          <i class="fa fa-home"></i> 
+        </div>
+        <div style="display:inline;" @click="$emit('openSidebar')">
+            <img class="img-fluid" src="../../assets/img/navicon-primary.png">
+        </div>
+    </span>
+  </div>
+
+  <div class="main-container">
+    <div class="info-box-container ">
+      <div class="image-container flex-column">
+        <img class="img-fluid" src="../../assets/img/user.png">
+        <div >
+          <p @click="$refs.inputImage.click()"> Upload Image </p>
+          <input type="file" id="myFile" ref="inputImage" style="display:none">
+        </div>
+      </div>
+      <input class="input-box" type="text" placeholder="Company Name">
+      <input class="input-box" type="text" placeholder="Contact Person">
+      <input class="input-box" type="text" placeholder="Contact Number">
+      <input class="input-box" type="text" placeholder="City">
+      <input class="input-box" type="text" placeholder="State">
+      <input class="input-box" type="text" placeholder="Country">
+      <input class="input-box" type="text" placeholder="Pincode">
+    </div>
+  </div>
+
+  <div class="btn-bottom">
+    <button class="btn btn-dark btn-bottom">Save</button>
+  </div>
+</div>

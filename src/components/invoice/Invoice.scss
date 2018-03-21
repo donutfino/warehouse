@@ -1,0 +1,57 @@
+@import "../../assets/custom";
+
+.component-invoice {
+  margin:20px 0;
+  .invoice-container {
+    background: white;
+    border-radius: 5px;
+    .horizontal-bar {
+      border-bottom: 1px solid rgba(#333,0.3);
+      margin-top:10px;
+    }
+    .product-invoice-container{
+      margin:10px 0;
+    }
+    .amount{
+      padding:10px 0;
+    }
+  }
+.btn-container{
+  button{
+    width:100%;
+    margin-top:20px;
+  }
+}
+}
+
+.gray-color{
+  color: gray;
+}
+.inner-info {
+  margin-top: 10px;
+}
+.inner-info p,
+.inner-info .flex-between{
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  color: #444;
+}
+
+.inner-info .flex-between:last-child() {
+  border-bottom: 0;
+}
+
+.amount {
+  background: linear-gradient(to bottom, #4c6efb 0%, #a7b9ff 100%);
+  color:white
+}
+
+.amount span {
+  padding: 10px 20px;
+}
+
+.invoice-for-padding {
+  padding: 10px 15px;
+}

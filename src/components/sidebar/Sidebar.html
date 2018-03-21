@@ -1,0 +1,13 @@
+<div class="component-sidebar">
+  <div v-for='data in nav_link' class="navbar">
+    <div @click="$router.push(data.url);$emit('closeBar') ">
+        {{data.icon}}
+        {{data.name}}
+    </div>
+  </div>
+  
+  <div class="close-bar" @click="$emit('closeBar')">
+    <img class="img-fluid" src="../../assets/img/cross.png">
+  </div>
+
+</div>

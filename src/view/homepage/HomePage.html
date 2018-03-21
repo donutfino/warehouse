@@ -1,0 +1,22 @@
+<div class="view-home">
+    <div class="fixed-nav flex-between">
+        <span class="chevron" @click="$router.go(-1)">
+            <img class="img-fluid" src="../../assets/img/chevron-right.png">
+        </span>
+        <span class="title">Home Page</span>
+        <span class="navicon">
+            <div style="display:inline;" @click="$router.push('/home-page')">
+                <i class="fa fa-home"></i> 
+            </div>
+            <div style="display:inline;" @click="$emit('openSidebar')">
+                <img class="img-fluid" src="../../assets/img/navicon-primary.png">
+            </div>
+        </span>
+    </div>
+    <div class="main-container">
+        <div class="">
+            <HomeTabs></HomeTabs>
+            <HomeButtons></HomeButtons>
+        </div>
+    </div>
+</div> 

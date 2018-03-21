@@ -1,0 +1,25 @@
+<div class="view-customer-list">
+  <div class="fixed-nav flex-between">
+    <span class="chevron" @click="$router.go(-1)">
+      <img class="img-fluid" src="../../assets/img/chevron-right.png">
+    </span>
+    <span class="title">Customer List</span>
+    <span class="navicon">
+        <div style="display:inline;" @click="$router.push('/home-page')">
+          <i class="fa fa-home"></i> 
+        </div>
+        <div style="display:inline;" @click="$emit('openSidebar')">
+            <img class="img-fluid" src="../../assets/img/navicon-primary.png">
+        </div>
+    </span>
+  </div>
+  <div class="main-container">
+    <div class="customer-card-main col-md-6 col-sm-6 col-xs-6"  v-for="i in 12" @click="$router.push('/customer')">
+      <CustomerCard></CustomerCard>
+    </div>
+  </div>
+
+  <div class="btn-bottom">
+    <button class="btn btn-bottom" @click="$router.push('/add-customer')">Add New Customer </button>
+  </div>
+</div>

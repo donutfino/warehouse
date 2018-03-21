@@ -1,0 +1,42 @@
+<div class="view-item-list">
+  <div class="fixed-nav flex-between">
+    <span class="chevron" @click="$router.go(-1)">
+      <img class="img-fluid" src="../../assets/img/chevron-right.png">
+    </span>
+    <span class="title">Item List</span>
+    <span class="navicon">
+        <div style="display:inline;" @click="$router.push('/home-page')">
+          <i class="fa fa-home"></i> 
+        </div>
+        <div style="display:inline;" @click="$emit('openSidebar')">
+            <img class="img-fluid" src="../../assets/img/navicon-primary.png">
+        </div>
+    </span>
+    <div class="toggle-nav">
+        <div @click="activeTab=1" class="tab" :class="{activeTab: activeTab==1}">In</div>
+        <div @click="activeTab=2" class="tab" :class="{activeTab: activeTab==2}" >Out</div>
+    </div>
+  </div>
+  <input type="text" v-model="search"/> 
+  <div class="main-container" style="padding-top:100px" v-if="activeTab==1">
+    <div class=""  v-for="i in 10">
+      <router-link to="/product">
+         <ProductCard></ProductCard>
+      </router-link>
+    </div>
+  </div>
+
+  <div class="main-container" style="padding-top:100px" v-else>
+    <div  v-for="i in 3">
+      <router-link to="/product">
+         <ProductCard></ProductCard>
+      </router-link>
+    </div>
+  </div>
+
+  <div class="btn-bottom">
+    <router-link to="/scan">
+        <button class="btn btn-dark btn-bottom">Add New Item </button>
+    </router-link>
+  </div>
+</div>
