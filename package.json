@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "node-sass": "^4.7.2",
     "quagga": "^0.12.1",
     "sass-loader": "^6.0.7",
